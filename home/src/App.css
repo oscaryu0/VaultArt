@@ -1,0 +1,28 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  color: #0b1224;
+  background: radial-gradient(circle at 20% 20%, rgba(72, 149, 239, 0.16), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(14, 180, 138, 0.12), transparent 32%),
+    linear-gradient(135deg, #0b1224 0%, #0b1f3a 40%, #0a2f46 100%);
+}
+
+.app-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 50%, rgba(255, 255, 255, 0.06), transparent 40%),
+    radial-gradient(circle at 30% 80%, rgba(14, 180, 138, 0.12), transparent 30%);
+  pointer-events: none;
+  filter: blur(60px);
+}
+
+.app-content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
